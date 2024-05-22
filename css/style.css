@@ -1,0 +1,58 @@
+@import url(/css/header.css);
+@import url(/css/inicio.css);
+@import url(/css/mediaquery.css);
+
+/* Confortaa */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/* .comfortaa-<uniquifier> {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+@font-face{
+    font-family: 'Roboto-Light';
+    src: url(/fuentes/pesca/Roboto-Light.ttf);
+    font-weight: light;
+    font-style: light;
+}
+@font-face{
+    font-family: 'Roboto-Regular';
+    src: url(/fuentes/pesca/Roboto-Regular.ttf);
+    font-weight: medium;
+    font-style: medium;
+}
+
+@font-face{
+    font-family: 'Roboto-Bold';
+    src: url(/fuentes/pesca/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-image: url(/img/fondo.png);
+    background-size: cover;
+}
+
+/* BOTON WASAP */
+
+.btn-wsp {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.img_wasap {
+    width: 70px;
+}
