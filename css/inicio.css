@@ -48,12 +48,6 @@ main {
      }
 
      .caro_magenta {
-        background: rgb(230, 7, 130);
-        background-image: url(../img/perfil/caro-1.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
         border: 5px solid black;
         border-radius: 5px;
 
@@ -70,8 +64,9 @@ main {
      /* IMAGEN PERFILES */
 
      .perfil_imagen {
-        max-width: 100%;
+        width: 100%;
         object-fit: cover;
+        filter: saturate(1.3);
      }
 
      /* CARO DESCRIPCION */
@@ -226,12 +221,6 @@ main {
      }
 
      .isaac_magenta {
-        /* background: rgb(27, 182, 199); */
-        /* background-image: url(../img/perfil/pela-4.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top; */
-
         border: 5px solid black;
         border-radius: 5px;
 
