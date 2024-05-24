@@ -40,10 +40,20 @@
     list-style-type: none;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
-    background-image: url(/img/fondo.png);
+    background-image: url(../img/fondo/fondo.png);
     background-size: cover;
+
+    -webkit-font-smoothing: antialiased;
 }
+
+section[id] {
+    scroll-margin-top: 60px;
+  }
 
 /* BOTON WASAP */
 

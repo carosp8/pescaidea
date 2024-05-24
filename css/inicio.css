@@ -68,9 +68,28 @@ main {
         object-fit: cover;
         filter: saturate(1.3);
      }
+     
+     
+     /* Definir la animación de aparición */
+     @keyframes fadeIn {
+         from {
+             opacity: 0;
+             transform: translateY(60px); /* Desplazamiento hacia abajo */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Posición original */
+            }
+        }
+        
+        /* Aplicar la animación a los elementos con la clase .fade-in */
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards; /* 1s de duración, ease-out para suavizar, forwards para mantener el estado final */
+        }
 
-     /* CARO DESCRIPCION */
 
+    /* CARO DESCRIPCION */
+        
      .caro_nombre, .caro_frase, .caro_profesion {
         font-family: 'Roboto-Regular';
         font-style: medium;
@@ -87,6 +106,7 @@ main {
         right: 42%;
 
         z-index: 700;
+        opacity: 0;
      }
      .caro_nombre::before {
         content: "";
@@ -139,6 +159,7 @@ main {
         line-height: 1.3;
 
         z-index: 700;
+        opacity: 0;
     }
     .caro_frase::before {
         content: "";
@@ -183,6 +204,7 @@ main {
         right: 22%;
 
         z-index: 700;
+        opacity: 0;
     }
 
 
@@ -252,6 +274,7 @@ main {
         left: 105%;
 
         z-index: 700;
+        opacity: 0;
      }
      .isaac_nombre::before {
         content: "";
@@ -304,6 +327,7 @@ main {
         line-height: 1.3;
 
         z-index: 700;
+        opacity: 0;
     }
     .isaac_frase::before {
         content: "";
@@ -348,6 +372,7 @@ main {
         right: -77%;
 
         z-index: 700;
+        opacity: 0;
     }
 
 /* INFORMACION */
