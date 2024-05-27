@@ -11,20 +11,20 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 200px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 5%;
     padding-top: 40px;
     }
+
+    /* IMAGEN PERFILES */
+
+    .perfil_imagen {
+        width: 100%;
+        object-fit: cover;
+        filter: saturate(1.3);
+     }
     
 /* CARO PERFIL */
-
-    .contenedor-caro {
-        min-width: 580px;
-        min-height: 450px;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
 
     .caro_perfil { 
         border: 5px solid rgb(0, 0, 0);
@@ -60,21 +60,12 @@ main {
 
         overflow: hidden;
      }
-
-     /* IMAGEN PERFILES */
-
-     .perfil_imagen {
-        width: 100%;
-        object-fit: cover;
-        filter: saturate(1.3);
-     }
-     
      
      /* Definir la animación de aparición */
      @keyframes fadeIn {
          from {
              opacity: 0;
-             transform: translateY(60px); /* Desplazamiento hacia abajo */
+             transform: translateY(20px); /* Desplazamiento hacia abajo */
             }
             to {
                 opacity: 1;
@@ -103,7 +94,7 @@ main {
         background: rgb(255, 208, 0);
         position: relative;
         top: 0;
-        right: 42%;
+        right: 40%;
 
         z-index: 700;
         opacity: 0;
@@ -210,16 +201,7 @@ main {
 
 /* ISAAC PERFIL */
 
-    .contenedor-isaac {
-        min-width: 570px;
-        min-height: 440px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-
     .isaac_perfil { 
-        /* grid-area: 1 / 3 / 3 / 4; */
         border: 5px solid black;
         border-radius: 20px;
         background: rgb(255, 208, 0);
@@ -271,7 +253,7 @@ main {
         background: rgb(255, 208, 0);
         position: relative;
         top: 0;
-        left: 105%;
+        left: 103%;
 
         z-index: 700;
         opacity: 0;
@@ -383,7 +365,6 @@ main {
         align-items: center;
         justify-content: center;
         padding-top: 40px;
-        /* min-width: 1330px; */
     }
 
     /* PORCENTAJE */

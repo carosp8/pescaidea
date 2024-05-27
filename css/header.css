@@ -7,15 +7,19 @@ header {
     padding: 20px 20px 0 20px;
 }
 
+.contenedor-nav {
+    padding-right: 5px;
+}
+
 .menu {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
 }
 
 .menu li {
-    padding: 0 3px;
-
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -23,15 +27,17 @@ header {
     color: black;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.6rem;
 }
 
-
-.logo img {
-    height: 55px;
+.contenedor-logo {
     padding-left: 5px;
+}
+
+.logo {
+    height: 45px;
 }
 
 .fa-quote-right {
@@ -44,23 +50,29 @@ header {
 .contenedor-padre {
     border: 4px solid black;
     background: white;
-    padding: 5px;
+    padding: 5px 0;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     position: relative;
 }
 
 /* Titulo */
 
+.contenedor-titulo {
+    flex: 0 1 auto; /* Permite que el contenedor del título ocupe solo el espacio necesario */
+    text-align: center;
+    padding-left: 20px;
+}
+
 #titulo {
     font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-    font-size: 2.2rem;
+    font-size: 2rem;
+    white-space: nowrap;
 }
 
 .blinking-cursor {
@@ -101,7 +113,7 @@ header {
     right: -7px;
 }
 
-.logo::before {
+.contenedor-logo::before {
     content: "";
     background-color: black;
     width: 12px;
@@ -121,21 +133,9 @@ nav::after {
     left: -7px;
 }
 
-.contenedor-titulo {
-    position: relative;
-}
-
-.comillas_azul img {
-    position: absolute;
-    width: 50px;
-    bottom: 20px;
-    left: -65px;
-}
-.comillas_rosas img {
-    position: absolute;
-    width: 50px;
-    top: -9px;
-    right: -60px;
+.comillas-violeta, .comillas-rosa {
+    width: 30px;
+    padding-bottom: 15px;
 }
 
 
