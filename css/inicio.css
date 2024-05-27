@@ -11,7 +11,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 5%;
     padding-top: 40px;
     }

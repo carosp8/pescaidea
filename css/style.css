@@ -42,13 +42,14 @@
 
 html {
     scroll-behavior: smooth;
+    background-image: url(../img/fondo/fondo.png);
+    background-size: cover;
   }
 
 body {
-    background-image: url(../img/fondo/fondo.png);
-    background-size: cover;
 
     -webkit-font-smoothing: antialiased;
+    width: 100%;
 }
 
 section[id] {
