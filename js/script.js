@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
 const nav = document.getElementById('nav');
 const abrirNav = document.getElementById('abrir');
 const cerrarNav = document.getElementById('cerrar');
-const contenedorNav = document.querySelector('.contenedor-nav');
 
 abrirNav.addEventListener('click', () => {
     nav.classList.add('visible');

@@ -490,6 +490,7 @@
             background-color: transparent;
             cursor: pointer;
             margin: 5%;
+            color: white;
         }
 
         /* LOGO NAV */
@@ -509,7 +510,7 @@
             top: -10px;
             right: -15px;
             height: 100vb;
-            background: white;
+            background: rgb(37, 37, 37);
             box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
             z-index: 999;
             padding: 2rem;
@@ -536,6 +537,7 @@
 
         .menu li a {
             font-size: 0.8rem;
+            color: white;
         }
     
     
