@@ -423,8 +423,8 @@
       
       @media only screen and (min-width: 290px) and (max-width: 636px) {
 
-        body {
-            color: red;
+        main {
+            margin-top: 70px;
         }
 
         .parent {
@@ -432,7 +432,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            /* min-width: 525px; */
             padding-top: 10px;
             }
     
@@ -605,8 +604,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding-top: 40px;
-            /* min-width: 525px; */
+            padding-top: 28px;
         }
     
         /* PORCENTAJE */
@@ -638,7 +636,7 @@
         /* INFO TEXTO */
     
         .info_texto p {
-            font-size: 0.6rem;
+            font-size: 0.8rem;
             line-height: 1.5;
         }
     
