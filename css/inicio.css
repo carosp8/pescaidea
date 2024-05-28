@@ -23,6 +23,10 @@ main {
         object-fit: cover;
         filter: saturate(1.3);
      }
+
+     .img-isaac {
+        transform: scaleX(-1);
+     }
     
 /* CARO PERFIL */
 

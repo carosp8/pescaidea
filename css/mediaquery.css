@@ -196,7 +196,7 @@
 }
 
 
-                    /* CELULAR */
+                    /* TABLET - CELULAR */
 
 @media only screen and (min-width: 637px) and (max-width: 970px) {
 
@@ -353,6 +353,8 @@
         .isaac_profesion {
             top: 60%;
             right: -77%;
+
+            padding: 5px 25px;
         }
 
         /* INFORMACION */
@@ -415,3 +417,247 @@
         height: 12px; /* Altura de la barra vertical */
     }
 }
+
+
+      /* CELULAR */
+      
+      @media only screen and (min-width: 290px) and (max-width: 636px) {
+
+        body {
+            color: red;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* min-width: 525px; */
+            padding-top: 10px;
+            }
+    
+            /* CONTENEDORES CARO-ISAAC */
+    
+            .contenedor-caro {
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: end;
+                width: 100%;
+            }
+
+            .contenedor-isaac {
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: start;
+                width: 100%;
+            }
+    
+            /* INFORMACION */
+    
+        .contenedor_info { 
+            padding-top: 0px;
+        }
+    
+            /* TITULO */
+    
+        #titulo {
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+    
+        /* LOGO */
+    
+        .logo {
+            display: none;
+        }
+    
+        /* NAV */
+    
+        .menu li a {
+            display: none;
+        }
+    
+    
+        /* COMILLAS */
+    
+        .comillas-violeta, .comillas-rosa {
+            width: 15px;
+            padding-bottom: 10px;
+        }
+    
+        /* CARO PERFIL */
+    
+        .caro_perfil { 
+            height: 18rem;
+            width: 16rem;
+         }
+    
+         .caro_blanco {
+            height: 18rem;
+            width: 16rem;
+    
+            top: -15px;
+            right: 20px;
+         }
+    
+         .caro_magenta {
+            height: 14.5rem;
+            width: 13rem;
+    
+            top: 23px;
+            right: 20px;
+         }
+    
+             /* CARO DESCRIPCION */
+    
+             .c_nombre {
+                font-size: 0.7em;
+             }
+        
+             .caro_nombre {
+                top: 0;
+                right: 42%;   
+             }
+    
+            .c_frase {
+                font-size: 0.6em;
+                padding: 10px;
+            }
+        
+            .caro_frase {
+                top: 35%;
+                right: 70%;
+
+                padding: 10px;
+            }
+    
+            .c_profesion {
+                font-size: 0.6em;
+            }
+        
+            .caro_profesion {
+                top: 50%;
+                right: 20%;
+
+                padding: 8px 25px;
+            }
+    
+         /* ISAAC PERFIL */
+    
+        .isaac_perfil { 
+            height: 18rem;
+            width: 16rem; 
+        }
+    
+        .isaac_blanco {
+            height: 18rem;
+            width: 16rem;
+    
+            top: -15px;
+            right: -10px;
+         }
+    
+         .isaac_magenta {
+            height: 14.5rem;
+            width: 13rem;
+    
+            top: 23px;
+            right: 20px;
+         }
+    
+              /* ISAAC DESCRIPCION */
+    
+             .i_nombre {
+                font-size: 0.7em
+             }
+        
+             .isaac_nombre {
+                top: 0px;
+                left: 104%;
+             }
+    
+            .i_frase {
+                font-size: 0.6em;
+                padding: 10px;
+            }
+        
+            .isaac_frase {
+                top: 36%;
+                right: -46%;
+
+                padding: 10px;
+            }
+    
+            .i_profesion {
+                font-size: 0.6em;
+            }
+        
+            .isaac_profesion {
+                top: 50%;
+                right: -69%;
+                padding: 8px 25px;
+            }
+    
+            /* INFORMACION */
+    
+        .contenedor_info { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+            /* min-width: 525px; */
+        }
+    
+        /* PORCENTAJE */
+    
+        .icon-ochenta-icon {
+            display: flex;
+            gap: 50px;
+        }
+    
+        h6 {
+            font-size: 20px;
+        }
+    
+        .info_porcentaje {
+            display: flex;
+            gap: 5px;
+        }
+    
+        .info_grafico80 {
+            height: 30px;
+            width: 200px;
+        }
+    
+        .info_grafico80::before {
+            height: 30px;
+            width: 1%;
+        }
+    
+        /* INFO TEXTO */
+    
+        .info_texto p {
+            font-size: 0.6rem;
+            line-height: 1.5;
+        }
+    
+        .fa-person, .fa-person-dress{
+            font-size: 20px;
+        }
+    
+        /* WHATSAPP */
+    
+        .img_wasap {
+            width: 40px;
+        }
+    
+        /* Cursor parpadeante */
+    
+        .blinking-cursor {
+            width: 3px; /* Ancho de la barra vertical */
+            height: 12px; /* Altura de la barra vertical */
+        }
+    }
+
+      
