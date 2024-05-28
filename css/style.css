@@ -59,11 +59,3 @@ body {
 section[id] {
     scroll-margin-top: 60px;
   }
-
-/* BOTON WASAP */
-
-.btn-wsp {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-}

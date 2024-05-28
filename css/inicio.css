@@ -1,5 +1,5 @@
 main {
-    margin-top: 97px;
+    margin-top: 70px;
 }
 
 #inicio {
@@ -464,5 +464,14 @@ main {
     .fa-person, .fa-person-dress{
         font-size: 24px;
     }
+
+    /* BOTON WASAP */
+
+.btn-wsp {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
 
     
