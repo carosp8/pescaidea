@@ -4,7 +4,7 @@ main {
 
 #inicio {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .parent {
@@ -86,7 +86,7 @@ main {
     /* CARO DESCRIPCION */
         
      .caro_nombre, .caro_frase, .caro_profesion {
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto';
         font-style: medium;
         font-weight: medium;
      }
@@ -245,7 +245,7 @@ main {
      /* ISAAC DESCRIPCION */
 
      .isaac_nombre, .isaac_frase, .isaac_profesion {
-        font-family: 'Roboto-Regular';
+        font-family: 'Roboto';
         font-style: medium;
         font-weight: medium;
      }
