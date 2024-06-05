@@ -4,19 +4,21 @@
 
 #proyectos {
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-items: center; */
     align-items: center;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
-    /* background: #e1e1e1; */
+    background: #e1e1e1;
+    padding: 20px 0;
 }
 
-#proyectos.dark {
-    /* background: #333; */
+/* #proyectos.dark {
+    background: #333;
     color: white;
-}
+} */
 
 .cards {
     display: flex;
@@ -103,4 +105,38 @@
 .cards .card:not(.active) .info {
     opacity: 0;
 }
+
+/* Titulo */
+
+.contenedor-titulo-proyectos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-items: end;
+}
+
+.contenedor-titulo {
+    justify-content: center;
+}
+
+.contenedor-caricatura {
+
+}
+
+.titulo-proyectos {
+    color: black;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.7rem;
+}
+
+.caricatura-arriba {
+    position: absolute;
+    top: -62px;
+}
+
+.caricatura-abajo {
+    width: 200px;
+}
+
+
 
