@@ -10,11 +10,11 @@
     overflow: hidden;
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
-    background: #e1e1e1;
+    /* background: #e1e1e1; */
 }
 
 #proyectos.dark {
-    background: #333;
+    /* background: #333; */
     color: white;
 }
 
@@ -22,7 +22,7 @@
     display: flex;
     max-width: 800px;
     width: calc(100% - 100px);
-    height: 600px;
+    height: 500px;
 }
 
 .cards .card .info .title {
@@ -58,8 +58,9 @@
     margin: 5px;
     background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
     background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
     cursor: pointer;
-    transition: 0.5s var(--cb);
+    transition: flex 0.5s var(--cb);
     border-radius: 30px;
 }
 
@@ -80,6 +81,7 @@
     flex-grow: 10000;
     background-size: cover;
     background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center; /* Centra la imagen de fondo */
 }
 
 .cards .card:not(.active) .label {

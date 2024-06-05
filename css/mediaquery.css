@@ -758,9 +758,9 @@
         .cards {
             display: flex;
             flex-direction: column;
-            max-width: 800px;
-            width: calc(100% - 100px);
-            height: 450px;
+            max-width: 100%;
+            width: calc(100% - 5%);
+            height: 500px;
         }
         
         .cards .card {
@@ -781,6 +781,27 @@
             font-weight: bold;
             font-size: 0.7rem;
         }
+
+        /* Proyectos */
+
+        #proyectos {
+            
+            flex-direction: column-reverse;
+            gap: 40px;
+            padding-top: 60px;
+        }
+
+        .titulo-proyectos {
+            color: black;
+            font-family: "Comfortaa", sans-serif;
+            font-size: 1.4rem;
+            padding: 2px;
+        }
+
+       .icono-proyectos {
+        position: absolute;
+        top: -62px;
+       }
 
 
     }
