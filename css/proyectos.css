@@ -6,12 +6,12 @@
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-items: center; */
+    justify-items: center;
     align-items: center;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
-    background: #e1e1e1;
+    /* background: #e1e1e1; */
     padding: 20px 0;
 }
 
@@ -22,8 +22,9 @@
 
 .cards {
     display: flex;
-    max-width: 800px;
-    width: calc(100% - 100px);
+    /* max-width: 100%; */
+
+    width: calc(100%);
     height: 500px;
 }
 
@@ -120,7 +121,7 @@
 }
 
 .contenedor-caricatura {
-
+    margin: 0 auto;
 }
 
 .titulo-proyectos {
@@ -135,7 +136,17 @@
 }
 
 .caricatura-abajo {
-    width: 200px;
+    width: 100px;
+    margin: 0 20px;
+}
+
+.info_texto2 p, .info_texto2 span {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.3;
+}
+
+.comillas-violeta2, .comillas-rosa2 {
+    width: 18px;
 }
 
 
