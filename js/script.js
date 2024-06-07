@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const nav = document.getElementById('nav');
 const abrirNav = document.getElementById('abrir');
 const cerrarNav = document.getElementById('cerrar');
+const menuItems = document.querySelectorAll('.menu a');
 
 abrirNav.addEventListener('click', () => {
     nav.classList.add('visible');
@@ -24,6 +25,13 @@ abrirNav.addEventListener('click', () => {
 cerrarNav.addEventListener('click', () => {
     nav.classList.remove('visible');
 })
+
+// Cerrar el menú al hacer clic en un enlace de la lista
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    });
+});
 
 
 // Proyecto Tarjetas //

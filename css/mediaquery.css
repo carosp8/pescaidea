@@ -1,5 +1,8 @@
 @media only screen and (min-width: 970px) and (max-width: 1230px) {
 
+    .contenedor-titulo {
+        padding-left: 7%;
+    }
 
     /* TITULO */
 
@@ -455,7 +458,7 @@
 
       /* CELULAR */
       
-      @media only screen and (min-width: 290px) and (max-width: 636px) {
+      @media only screen and (min-width: 200px) and (max-width: 636px) {
 
         main {
             margin-top: 70px;

@@ -1,5 +1,6 @@
 main {
     margin-top: 70px;
+    min-width: 375px;
 }
 
 #inicio {
