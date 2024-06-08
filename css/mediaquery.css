@@ -465,6 +465,15 @@
       
       @media only screen and (min-width: 200px) and (max-width: 636px) {
 
+        .contenedor-caricatura-arriba {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .caricatura-arriba {
+            display: block;
+            width: 80px;
+        }
         main {
             margin-top: 70px;
         }
@@ -792,26 +801,15 @@
 
         /* Proyectos */
 
-        /* #proyectos {
-            
+        #proyectos {
             flex-direction: column-reverse;
-            gap: 40px;
-            padding-top: 60px;
         }
 
-        .titulo-proyectos {
-            color: black;
-            font-family: "Comfortaa", sans-serif;
-            font-size: 1.4rem;
-            padding: 2px;
+        .caricatura-abajo {
+            display: none;
         }
 
-       .icono-proyectos {
-        position: absolute;
-        top: -62px;
-       } */
-
-           /* BOTON WASAP */
+        /* BOTON WASAP */
 
     .btn-wsp {
         position: fixed;

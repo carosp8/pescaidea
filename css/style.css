@@ -38,3 +38,7 @@ body {
 section[id] {
     scroll-margin-top: 60px;
   }
+
+  .caricatura-arriba {
+    display: none;
+  }
