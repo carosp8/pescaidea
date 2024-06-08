@@ -234,7 +234,7 @@
     #titulo {
         font-size: 1.3rem;
         white-space: nowrap;
-        padding-left: 20px;
+        padding-left: 40px;
     }
 
     /* LOGO */
@@ -405,6 +405,11 @@
 
     .info_texto p {
         font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .info_texto2 p {
+        font-size: 0.9rem;
         line-height: 1.5;
     }
 
