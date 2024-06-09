@@ -467,7 +467,7 @@
 
         .contenedor-caricatura-arriba {
             display: flex;
-            gap: 50px;
+            gap: 0px;
         }
         
         .caricatura-arriba {
