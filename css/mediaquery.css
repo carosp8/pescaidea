@@ -1,7 +1,7 @@
 @media only screen and (min-width: 970px) and (max-width: 1230px) {
 
     .cards .card:not(.active) {
-        background-image: url(/img/logo/logo-horizontal-negro-proyectos.png);
+        background-image: url(../img/logo/logo-horizontal-negro-proyectos.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -215,7 +215,7 @@
 @media only screen and (min-width: 637px) and (max-width: 970px) {
 
     .cards .card:not(.active) {
-        background-image: url(/img/logo/logo-horizontal.png);
+        background-image: url(../img/logo/logo-horizontal.png);
         background-position: center;
         background-size: contain;
         background-color: rgb(208, 204, 204);
@@ -472,7 +472,7 @@
     }
 
     .cards .card:not(.active) {
-        background-image: url(/img/logo/logo-horizontal.png);
+        background-image: url(../img/logo/logo-horizontal.png);
     }
 
     .cards .card .info .title-parrafo {
@@ -794,7 +794,7 @@
         /* Poyecto Cards */
 
         .cards .card:not(.active) {
-            background-image: url(/img/logo/logo-horizontal.png);
+            background-image: url(../img/logo/logo-horizontal.png);
             background-position: center;
             background-size: contain;
             background-color: rgb(208, 204, 204);
