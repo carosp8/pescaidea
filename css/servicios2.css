@@ -48,6 +48,7 @@
     font-size: 1.5rem;
     align-self: flex-end;
     padding-top: 5px;
+    font-family: "Comfortaa", sans-serif;
 }
 
 .btn-item {
@@ -59,7 +60,8 @@
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    transition: all .3s ease-in 0s;
+    transition: all .2s ease-in;
+    background-color: #F1992A;
 }
 /* Agregamos el emoji inicial */
 .btn-item::after {
@@ -67,7 +69,8 @@
     
 }
 .btn-item:hover{
-    background: rgb(144, 144, 144);
+    background: rgb(230, 7, 129);
+    color: #fff;
 }
 /* Cambiamos el emoji al hacer hover */
 .btn-item:hover::after {
@@ -80,7 +83,8 @@
 } */
 
 #next, #prev {
-    color: rgb(97, 97, 97);
+    /* color: rgb(97, 97, 97); */
+    color: black;
     background-color: transparent;
     border: none;
     font-size: 3rem;
@@ -94,7 +98,7 @@
     transition: all .2s ease-in-out 0s;
 }
 #next:hover, #prev:hover{
-    color: black;
+    color: #1BB6C7;
 }
 #prev {
     right: unset;
