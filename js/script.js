@@ -45,7 +45,7 @@ cards.forEach(card =>{
     })
 })
 
-// Servicios 2 //
+// Servicios //
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
