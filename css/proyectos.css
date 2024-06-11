@@ -79,7 +79,7 @@
     display: flex;
     position: absolute;
     right: 0;
-    height: 30px;
+    height: 35px;
     transition: 0.5s var(--cb);
 }
 
@@ -109,6 +109,14 @@
     background: linear-gradient(
         0, #0004, transparent
     );
+}
+
+.cards .card:not(.active) {
+    /* background-image: url(/img/logo/logo-horizontal-negro-proyectos.png);
+    background-position: center;
+    background-size: contain; */
+    background-color: rgb(249, 247, 247);
+    transition: all .3s ease-in-out ;
 }
 
 .cards .card:not(.active) .info {
