@@ -14,12 +14,12 @@
 }
 
 #proyectos.dark {
-    background: rgba(0, 0, 0, 0.14);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.3px);
--webkit-backdrop-filter: blur(5.3px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 169, 10, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: black;
 }
 
@@ -173,6 +173,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .caricatura-abajo {
     width: 80px;
+}
+
+.info_texto2 {
+    background: none;
 }
 
 .info_texto2 p, .info_texto2 span {

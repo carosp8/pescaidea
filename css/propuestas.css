@@ -1,0 +1,16 @@
+#propuestas {
+    margin-top: 50px;
+}
+
+.contenedor_h3 {
+    opacity: 1;
+    top: 0;
+    right: 0;
+    background: #FAE904;
+    padding: 1px 5px;
+}
+
+.h3_propuestas {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}

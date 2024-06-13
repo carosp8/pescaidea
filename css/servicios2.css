@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .slider {
@@ -15,11 +16,11 @@
     height: 600px;
     overflow: hidden;
     /* background: rgba(45, 45, 45, 0.195); */
-    background: rgba(242, 242, 242, 0);
+    background: rgba(255, 165, 11, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.4px);
-    -webkit-backdrop-filter: blur(4.4px);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
     border: 1px solid rgba(242, 242, 242, 1);
 }
 
@@ -121,8 +122,9 @@
 
 .image img{
     max-width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border: 2px solid rgb(234, 233, 233);
+    object-fit: fill;
+    /* object-position: center; */
     border-radius: 5px;
+    /* width: 360px;
+    height: 280px; */
 }
