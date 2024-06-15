@@ -846,10 +846,38 @@
         right: 10px;
 }
 
-/* Servicios */
+.packs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.pack {
+    background-color: #fdfdfd;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 100%;
+    text-align: center;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+}
 
+.section-title .after-title {
+    font-size: 1.2rem;
+}
 
+.propuestas-body .container .packs .pack h3 {
+    font-size: 1.3rem;
+}
+
+.propuestas-body .container .important {
+    padding-bottom: 50px;
+}
+
+.propuestas-body .container .section-title {
+    color: red;
+    margin-top: 60px;
+}
 
 }
 
