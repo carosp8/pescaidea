@@ -456,10 +456,13 @@ main {
         color: rgb(103, 120, 255);
     }
     .naranja {
-        color: rgb(255, 147, 30);
+        color: #FF931E;
     }
     .magenta {
-        color: rgb(230,7,129);
+        color: #E60781;
+    }
+    .celeste {
+        color: #1BB6C7;
     }
 
     .fa-person, .fa-person-dress{
