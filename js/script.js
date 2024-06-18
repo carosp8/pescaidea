@@ -51,36 +51,63 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 
 let active = 3;
-function loadShow(){
+function loadShow() {
     let stt = 0;
-    items[active].style.transform = `none`;
+    const isSmallScreen = window.matchMedia("(min-width: 200px) and (max-width: 636px)").matches;
+    
+    // Resetea el estilo del elemento activo
+    items[active].style.transform = 'none';
     items[active].style.zIndex = 1;
     items[active].style.filter = 'none';
     items[active].style.opacity = 1;
-    for(var i = active + 1; i < items.length; i++){
+
+    // Aplica el estilo a los elementos siguientes al activo
+    for (var i = active + 1; i < items.length; i++) {
         stt++;
-        items[i].style.transform = `translateX(${100*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+        if (isSmallScreen) {
+            // Transformación vertical
+            items[i].style.transform = `translateY(${100 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateX(-1deg)`;
+        } else {
+            // Transformación horizontal
+            items[i].style.transform = `translateX(${100 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+        }
         items[i].style.zIndex = -stt;
         items[i].style.filter = 'blur(2px)';
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
     }
-    stt = 0
-    for(var i = active - 1; i >= 0; i--){
-        stt++
-        items[i].style.transform = `translateX(${-100*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+
+    stt = 0;
+
+    // Aplica el estilo a los elementos anteriores al activo
+    for (var i = active - 1; i >= 0; i--) {
+        stt++;
+        if (isSmallScreen) {
+            // Transformación vertical
+            items[i].style.transform = `translateY(${-100 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateX(1deg)`;
+        } else {
+            // Transformación horizontal
+            items[i].style.transform = `translateX(${-100 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+        }
         items[i].style.zIndex = -stt;
         items[i].style.filter = 'blur(2px)';
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
     }
 }
+
+// Ejecuta loadShow inicialmente
 loadShow();
 
-next.onclick = function(){
+// Añade el evento a los botones de navegación
+next.onclick = function() {
     active = active + 1 < items.length ? active + 1 : active;
     loadShow();
 }
-prev.onclick = function(){
+
+prev.onclick = function() {
     active = active - 1 >= 0 ? active - 1 : active;
     loadShow();
 }
+
+// Escucha los cambios en el tamaño de la ventana y ajusta el slider
+window.addEventListener('resize', loadShow);
 
