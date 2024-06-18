@@ -69,21 +69,21 @@
 }
 
 .btn-item {
-    align-self: center;
+    text-align: center;
     margin-top: 15px;
     width: 100%;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 700;
     border: none;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 20px;
     transition: all .2s ease-in;
-    /* background-color: #F1992A; */
     background-color: #FFD000;
+    font-family: 'Montserrat', sans-serif;
 }
 /* Agregamos el emoji inicial */
 .btn-item::after {
-    content: "\1F604"; /* Emoji 😀 */
+    content: " \1F604"; /* Emoji 😀 */
     
 }
 .btn-item:hover{
@@ -92,13 +92,8 @@
 }
 /* Cambiamos el emoji al hacer hover */
 .btn-item:hover::after {
-    content: "\1F60D"; /* Emoji 😍 */
+    content: " \1F60D"; /* Emoji 😍 */
 }
-
-/* .contenedor-btnes {
-    display: flex;
-    justify-content: center;
-} */
 
 #next, #prev {
     color: black;
@@ -128,7 +123,6 @@
 .image img{
     max-width: 100%;
     object-fit: fill;
-    /* object-position: center; */
     border-radius: 5px;
     /* width: 360px;
     height: 280px; */
