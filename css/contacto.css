@@ -4,7 +4,7 @@
 
 .contenedor-imagen-fija {
     height: 600px;
-    background-image: url(/img/fondo/desk.webp);
+    background-image: url(../img/fondo/escritorio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -118,6 +118,23 @@
     cursor: pointer;
     padding: 10px 10px;
     border-radius: 10px;
+    border: none;
+}
+.inputBox input[type="submit"] {
+    background: #FF931E;
+    color: white;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all .2s ease-in-out 0s;
+    text-transform: uppercase;
+}
+.inputBox input[type="submit"]:hover {
+    background: #E60781;
 }
 .inputBox::placeholder {
     color: #999;
@@ -126,8 +143,49 @@
 /* info */
 
 .infoDos {
-    background: #333;
-    padding: 15px 40px;
+    background: #1AB2C2;
+    padding: 55px 40px;
+    position: relative;
+}
+.infoDos::before {
+    content: "";
+    position: absolute;
+    background: black;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+}
+.infoDos::after {
+    content: "";
+    background: rgb(255, 208, 0);
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+.infoDos h4::before {
+    content: "";
+    background: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+}
+.infoDos h4::after {
+    content: "";
+    background: rgb(230, 7, 129);
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
 }
 .infoDos .infoBox .title-contacto-info {
     color: white;
@@ -144,7 +202,7 @@
     min-width: 40px;
     height: 40px;
     color: white;
-    background: orange;
+    background: #FF931E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,10 +213,18 @@
 .infoDos .infoBox div p {
     color: white;
     font-size: 1.1em;
+    transition: all .3s ease-in-out 0s;
 }
 .infoDos .infoBox div a {
     color: white;
     font-size: 1.1em;
+    transition: all .3s ease-in-out 0s;
+}
+.infoDos .infoBox div a:hover {
+    font-weight: bold;
+}
+.infoDos .infoBox div p:hover {
+    font-weight: bold;
 }
 .sci {
     margin-top: 40px;
@@ -170,10 +236,10 @@
 .sci li a {
     color: white;
     font-size: 2em;
-    color: #ccc;
+    transition: all .3s ease-in-out 0s;
 }
 .sci li a:hover {
-    color: white;
+    color: #FF931E;
 }
 
 .map {

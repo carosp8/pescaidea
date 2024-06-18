@@ -46,3 +46,41 @@ section[id] {
   .caricatura-arriba {
     display: none;
   }
+
+  /* footer */
+
+  #footer {
+    margin-top: 60px;
+    background: #333333;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contenedor-logo-blanco img {
+    width: 150px;
+    padding-top: 30px;
+  }
+
+  .menu-footer .menuDos li a {
+    color: white;
+    font-size: 0.9em;
+  }
+
+  .copyright .pesca {
+    color: #E60781;
+  }
+  .copyright .idea {
+    color: #1BB6C7;
+  }
+
+  .copyright p {
+    padding-bottom: 20px;
+  }
