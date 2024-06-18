@@ -40,7 +40,7 @@ body {
 }
 
 section[id] {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 90px;
   }
 
   .caricatura-arriba {
@@ -66,7 +66,7 @@ section[id] {
 
   .contenedor-logo-blanco img {
     width: 150px;
-    padding-top: 30px;
+    padding-top: 15px;
   }
 
   .menu-footer .menuDos li a {

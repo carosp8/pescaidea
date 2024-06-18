@@ -19,10 +19,8 @@
 }
 
 .contactUs .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2em;
+    text-align: left;
 }
 .contactUs .title h3 {
     color: black;
@@ -274,5 +272,46 @@
     }
     .inputBox {
         width: 100%;
+    }
+    .contactUs .title {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 636px) {
+    #footer .contenedor-footer .menuDos {
+        display: flex;
+        flex-direction: row;
+    }
+    #footer .contenedor-footer .menuDos li a {
+        font-size: 0.6em;
+    }
+    #footer .copyright p {
+        font-size: 0.6em;
+    }
+    .box .form {
+        text-align: center;
+    }
+    .contact .title-enviar-mensaje {
+        font-size: 1em;
+        top: 10px;
+        right: 4px;
+        padding-top: 5px;
+        position: absolute;
+        width: 100%;
+    }
+    .box .form .formBox .inputBox {
+        text-align: left;
+    }
+    .contactUs .title {
+        font-size: 2em;
+        text-align: center;
+    }
+    #contacto .contactUs {
+        position: relative;
+        width: 100%;
+        padding: 40px 0px;
+        font-family: 'Montserrat', sans-serif;
     }
 }
