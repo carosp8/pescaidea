@@ -4,11 +4,12 @@
 
 .contenedor-imagen-fija {
     height: 600px;
-    background-image: url(../img/fondo/background-contacto1.webp);
+    background-image: url(../img/fondo/contacto-pc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
+    /* filter: saturate(0); */
 }
 
 .contactUs {
@@ -313,5 +314,16 @@
         width: 100%;
         padding: 40px 0px;
         font-family: 'Montserrat', sans-serif;
+    }
+    .contenedor-imagen-fija {
+        background-image: url(../img/fondo/contacto-celular.jpg); /* Cambia esta ruta por la de tu imagen para dispositivos móviles */
+         /* Opcional: Puedes cambiar la propiedad de attachment si no quieres que se fije en dispositivos móviles */
+    }
+}
+
+@media only screen and (min-width: 637px) and (max-width: 970px) {
+    .contenedor-imagen-fija {
+        background-image: url(../img/fondo/contacto-tablet.jpg); /* Cambia esta ruta por la de tu imagen para dispositivos móviles */
+        /* Opcional: Puedes cambiar la propiedad de attachment si no quieres que se fije en dispositivos móviles */
     }
 }
