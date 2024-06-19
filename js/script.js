@@ -111,3 +111,7 @@ prev.onclick = function() {
 // Escucha los cambios en el tamaño de la ventana y ajusta el slider
 window.addEventListener('resize', loadShow);
 
+
+
+
+
