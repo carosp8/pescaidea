@@ -86,13 +86,19 @@
     content: " \1F604"; /* Emoji 😀 */
     
 }
-.btn-item:hover{
+.item:hover {
+    .btn-item{
     background: rgb(230, 7, 129);
     color: #fff;
-}
-/* Cambiamos el emoji al hacer hover */
-.btn-item:hover::after {
-    content: " \1F60D"; /* Emoji 😍 */
+    }
+    .btn-item::after {
+        content: " \1F604"; /* Emoji 😀 */
+        
+    }
+    .btn-item::after {
+        content: " \1F60D"; /* Emoji 😍 */
+    }
+
 }
 
 #next, #prev {
@@ -126,4 +132,35 @@
     border-radius: 5px;
     /* width: 360px;
     height: 280px; */
+}
+
+@media only screen and (min-width: 200px) and (max-width: 636px) {
+    .item {
+        width: 350px;
+        height: 500px;
+    }
+    .image img {
+        object-fit: fill;
+    }
+    .info h5 {
+        font-size: 1.1rem;
+    }
+    .info p {
+        font-size: 14.5px;
+    }
+
+    .item:hover {
+        .btn-item{
+        background: rgb(230, 7, 129);
+        color: #fff;
+        }
+        .btn-item::after {
+            content: " \1F604"; /* Emoji 😀 */
+            
+        }
+        .btn-item::after {
+            content: " \1F60D"; /* Emoji 😍 */
+        }
+    
+    }
 }
