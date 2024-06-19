@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    background-image: url(../img/fondo/fondo.png);
+    background-image: url(../img/fondo/fondo.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

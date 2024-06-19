@@ -4,11 +4,11 @@
 
 .contenedor-imagen-fija {
     height: 600px;
-    background-image: url(../img/fondo/Close\ up\ of\ empty\ desk\ hyper\ realistic\ view\ from\ t.webp);
+    background-image: url(../img/fondo/background-contacto1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
 }
 
 .contactUs {
