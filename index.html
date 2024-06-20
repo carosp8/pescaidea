@@ -425,23 +425,31 @@
                     <!-- Form -->
                     <div class="contact form">
                         <h4 class="title-enviar-mensaje">¿Tenes alguna pregunta o comentario?</h4>
-                        <form action="">
+                        <form action="enviar_correo.php" method="post" id="formulario">
                             <div class="formBox">
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Nombre</span>
-                                        <input type="text" placeholder="Pesca">
+                                        <input type="text" placeholder="Pesca" id="nombre" name="nombre">
+                                        <p id="parrafo-nombre"></p>
                                     </div>
                                     <div class="inputBox">
                                         <span>Apellido</span>
-                                        <input type="text" placeholder="Idea">
+                                        <input type="text" placeholder="Idea" id="apellido" name="apellido">
+                                        <p id="parrafo-apellido"></p>
                                     </div>
                                 </div>
 
                                 <div class="row50">
                                     <div class="inputBox">
-                                        <span>Email</span>
-                                        <input type="text" placeholder="pescaidea@email.com">
+                                        <span id="span-asunto">Asunto</span>
+                                        <input type="text" id="asunto" placeholder="..." name="asunto">
+                                        <p id="parrafo-asunto"></p>
+                                    </div>
+                                    <div class="inputBox">
+                                        <span id="span-email">Email</span>
+                                        <input type="text" id="email" placeholder="pescaidea@email.com" name="email">
+                                        <p id="parrafo-email"></p>
                                     </div>
                                     
                                 </div>
@@ -449,13 +457,13 @@
                                 <div class="row100">
                                     <div class="inputBox">
                                         <span>Mensaje</span>
-                                        <textarea name="" id="" placeholder="Dejanos tus inquietudes, estamos para escucharte..."></textarea>
+                                        <textarea name="msg" id="mensaje" placeholder="Dejanos tus inquietudes, estamos para escucharte..."></textarea>
                                     </div>
                                 </div>
 
                                 <div class="row100">
                                     <div class="inputBox">
-                                        <input type="submit" value="Enviar">
+                                        <input type="submit" value="Enviar" id="btn-enviar">
                                     </div>
                                 </div>
                             </div>
@@ -526,6 +534,7 @@
     </main>
 
 
+    
     
     <script src="./js/script.js"></script>
 </body>
