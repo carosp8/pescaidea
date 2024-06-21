@@ -324,6 +324,7 @@
     .contenedor-imagen-fija {
         background-image: url(../img/fondo/contacto-celular.jpg); /* Cambia esta ruta por la de tu imagen para dispositivos móviles */
          /* Opcional: Puedes cambiar la propiedad de attachment si no quieres que se fije en dispositivos móviles */
+         background-position: center;
     }
 }
 
@@ -331,5 +332,6 @@
     .contenedor-imagen-fija {
         background-image: url(../img/fondo/contacto-tablet.jpg); /* Cambia esta ruta por la de tu imagen para dispositivos móviles */
         /* Opcional: Puedes cambiar la propiedad de attachment si no quieres que se fije en dispositivos móviles */
+        background-position: right;
     }
 }

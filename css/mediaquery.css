@@ -525,6 +525,7 @@
             background-color: transparent;
             cursor: pointer;
             padding-right: 10px;
+            color: black;
         }
 
         .cerrar-menu {
