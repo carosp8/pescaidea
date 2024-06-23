@@ -111,50 +111,7 @@ prev.onclick = function() {
 // Escucha los cambios en el tamaño de la ventana y ajusta el slider
 window.addEventListener('resize', loadShow);
 
-
-
 // Validar formulario
-
-// let formulario = document.getElementById('form');
-
-// console.log(formulario);
-
-// formulario.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-//     if(!loguearse()){
-//         Swal.fire({
-//             title: 'Formulario Vacio',
-//             text: 'vamos de nuevo',
-//             icon: 'error',
-//             confirmButtonText: 'OK',
-//             background: '#F3F4F5e8',
-//             grow: 'row',
-//             imageUrl: './img/logo/jokmoviles.png',
-//             imageHeight: '50%'
-//           })
-//         e.preventDefault();
-//     }else {
-//         formulario.submit();
-//     }
-// })
-
-// let loguearse = () => {
-
-//     let usuario = document.getElementById('email');
-//     let password = document.getElementById('password');
-
-//     if((usuario.value == "") && (password.value == "")){
-//         let parrafoUsuario = document.querySelector('.parrafo-usuario');
-//         parrafoUsuario.textContent = "El usuario es obligatorio para continuar."
-    
-//         let parrafoPassword = document.querySelector('.parrafo-password');
-//         parrafoPassword.textContent = "La contraseña es obligatoria."
-        
-//     }else{
-    
-//     }
-// }
 
 let form = document.getElementById('formulario');
 
@@ -193,5 +150,69 @@ let errorEmail = () => {
     return true;
 }
 
+// Efecto secciones
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+
+    const handleScroll = () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                section.classList.add('section-visible');
+            } else {
+                section.classList.remove('section-visible');
+            }
+        });
+    };
+
+    // Aplicar el manejo del scroll al cargar la página y al hacer scroll
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Ejecutar al cargar la página para animar las secciones visibles
+});
+
+// Efecto enlaces al seleccionarlos
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.menu li a');
+    const sections = document.querySelectorAll('section');
+
+    // Añadir evento click a cada enlace para resaltar cuando se haga clic
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remover la clase 'active' de todos los enlaces
+            navLinks.forEach(link => link.classList.remove('activo'));
+            // Añadir la clase 'active' al enlace seleccionado
+            this.classList.add('activo');
+        });
+    });
+
+    const handleScroll = () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // Usar window.scrollY en lugar de pageYOffset
+            if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        // Remover la clase 'active' de todos los enlaces
+        navLinks.forEach(link => link.classList.remove('activo'));
+        
+        // Añadir la clase 'active' al enlace correspondiente basado en la sección visible
+        if (current) {
+            const activeLink = document.querySelector(`.menu li a[href="#${current}"]`);
+            if (activeLink) {
+                activeLink.classList.add('activo');
+            }
+        }
+    };
+
+    // Aplicar el manejo del scroll al cargar la página y al hacer scroll
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Ejecutar al cargar la página para animar las secciones visibles
+});
 
 

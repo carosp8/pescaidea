@@ -50,6 +50,21 @@ section[id] {
     display: none;
   }
 
+  /* secciones */
+
+  /* Estilos básicos para las secciones */
+section {
+  opacity: 0; /* Inicialmente invisibles */
+  transform: translateY(50px); /* Posicionadas más abajo para el efecto */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transiciones suaves */
+}
+
+/* Estilos cuando la sección es visible */
+.section-visible {
+  opacity: 1; /* Totalmente visibles */
+  transform: translateY(0); /* Posición original */
+}
+
   /* footer */
 
   #footer {

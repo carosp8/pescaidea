@@ -35,6 +35,26 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.6rem;
+    /* transition: all 0.3s ease-in 0s; */
+    position: relative;
+    padding-bottom: 5px;
+}
+.menu li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #6778FF;
+    bottom: 0; /* Cambiado a 0 para que la línea se alinee con el borde inferior */
+    transition: all 0.4s ease-in-out 0s;
+}
+.menu li a.activo {
+    color: #6778FF; /* Color del enlace cuando está activo */
+    width: 100%;
+}
+
+.menu li a.activo::before {
+    width: 100%; /* La línea debajo del enlace activo debe estar completa */
 }
 
 .logo {
