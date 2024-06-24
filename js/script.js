@@ -177,42 +177,54 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.menu li a');
     const sections = document.querySelectorAll('section');
 
-    // Añadir evento click a cada enlace para resaltar cuando se haga clic
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            // Remover la clase 'active' de todos los enlaces
-            navLinks.forEach(link => link.classList.remove('activo'));
-            // Añadir la clase 'active' al enlace seleccionado
-            this.classList.add('activo');
-        });
-    });
-
     const handleScroll = () => {
-        let current = '';
+        const scrollPosition = window.scrollY;
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            // Usar window.scrollY en lugar de pageYOffset
-            if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
+
+            if (scrollPosition >= (sectionTop - sectionHeight / 3)) {
+                const sectionId = section.getAttribute('id');
+                const activeLink = document.querySelector(`.menu li a[href="#${sectionId}"]`);
+
+                // Remover la clase 'activo' de todos los enlaces
+                navLinks.forEach(link => link.classList.remove('activo'));
+
+                // Añadir la clase 'activo' al enlace correspondiente
+                if (activeLink) {
+                    activeLink.classList.add('activo');
+                }
             }
         });
-
-        // Remover la clase 'active' de todos los enlaces
-        navLinks.forEach(link => link.classList.remove('activo'));
-        
-        // Añadir la clase 'active' al enlace correspondiente basado en la sección visible
-        if (current) {
-            const activeLink = document.querySelector(`.menu li a[href="#${current}"]`);
-            if (activeLink) {
-                activeLink.classList.add('activo');
-            }
-        }
     };
 
     // Aplicar el manejo del scroll al cargar la página y al hacer scroll
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Ejecutar al cargar la página para animar las secciones visibles
 });
+
+
+// Mostrar el modal al cargar la página si el formulario fue enviado
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('formulario')) {
+        document.getElementById('modal-confirmacion').style.display = 'block';
+    }
+}
+
+// Cerrar el modal al hacer clic en la 'X'
+document.getElementById('cerrar-modal').onclick = function() {
+    document.getElementById('modal-confirmacion').style.display = 'none';
+    window.location.href = "index.html";
+}
+
+// Cerrar el modal al hacer clic fuera de él
+window.onclick = function(event) {
+    if (event.target == document.getElementById('modal-confirmacion')) {
+        document.getElementById('modal-confirmacion').style.display = 'none';
+        window.location.href = "index.html";
+    }
+}
 
 

@@ -11,7 +11,7 @@
     font-family: "Roboto", sans-serif;
     transition: 0.25s;
     padding: 50px 0;
-    min-height: 100vh;
+    min-height: 85vh;
 }
 
 #proyectos.dark {

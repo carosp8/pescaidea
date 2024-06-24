@@ -438,12 +438,12 @@
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Nombre</span>
-                                        <input type="text" placeholder="Pesca" id="nombre" name="nombre">
+                                        <input type="text" placeholder="Pesca" id="nombre" name="nombre" required>
                                         <p id="parrafo-nombre"></p>
                                     </div>
                                     <div class="inputBox">
                                         <span>Apellido</span>
-                                        <input type="text" placeholder="Idea" id="apellido" name="apellido">
+                                        <input type="text" placeholder="Idea" id="apellido" name="apellido" required>
                                         <p id="parrafo-apellido"></p>
                                     </div>
                                 </div>
@@ -512,6 +512,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal -->
+    <div id="modal-confirmacion" class="modal">
+        <div class="modal-content">
+            <span class="close" id="cerrar-modal">&times;</span>
+            <p>Formulario enviado exitosamente.</p>
+        </div>
+    </div>
 
         <section id="footer">
             <div class="contenedor-footer">
