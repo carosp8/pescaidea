@@ -39,6 +39,9 @@ header {
     position: relative;
     padding-bottom: 5px;
 }
+.menu li a:hover {
+    color: #6778FF;
+}
 .menu li a::before {
     content: "";
     position: absolute;
@@ -46,7 +49,7 @@ header {
     height: 2px;
     background: #6778FF;
     bottom: 0; /* Cambiado a 0 para que la línea se alinee con el borde inferior */
-    transition: all 0.4s ease-in-out 0s;
+    transition: all 0.2s ease-in-out;
 }
 .menu li a.activo {
     color: #6778FF; /* Color del enlace cuando está activo */
